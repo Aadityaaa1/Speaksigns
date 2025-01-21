@@ -1,7 +1,7 @@
 streamlit==1.41.1
+setuptools
 opencv-python-headless==4.5.5.64
 pyttsx3==2.90
 ultralytics==8.1.0  
 numpy==1.23.4  
 torch==1.13.1+cpu 
-setuptools
