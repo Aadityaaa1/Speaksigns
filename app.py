@@ -8,8 +8,7 @@ import pyttsx3  # Library for text-to-speech
 tts_engine = pyttsx3.init()
 
 # Load YOLO model
-model = YOLO(r"C:\Users\aadit\Downloads\streamlit-signlanguage\best1.pt")
-
+model = YOLO(r"C:\Users\aadit\Desktop\DTL\best1.pt")
 # Speak the detected sign out loud
 def speak_text(text):
     tts_engine.say(text)
