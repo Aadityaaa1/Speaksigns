@@ -1,6 +1,5 @@
 opencv-python-headless
 numpy
 streamlit
-pyttsx3
 streamlit-camera-input-live
 ultralytics
