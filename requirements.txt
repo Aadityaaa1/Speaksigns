@@ -1,5 +1,6 @@
 opencv-python
-twilio
-gradio>=5.0
-gradio-webrtc
-onnxruntime-gpu
+numpy
+streamlit
+pyttsx3
+streamlit-camera-input-live
+ultralytics
