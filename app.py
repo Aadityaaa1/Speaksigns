@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import streamlit as st
-import pyttsx3
 import time
 from camera_input_live import camera_input_live
 from ultralytics import YOLO
@@ -9,9 +8,6 @@ from ultralytics import YOLO
 # Load YOLO model
 model = YOLO(r"best1.pt")
 
-# Initialize TTS
-tts_engine = pyttsx3.init()
-last_tts_time = 0
 
 # UI
 st.title("Live Sign Language Detection")
@@ -39,12 +35,6 @@ if image is not None:
 
         # Display the detected sign
         st.success(f"Detected: {label_text}")
-
-        # Speak only once every 3 seconds
-        current_time = time.time()
-        if current_time - last_tts_time >= 3:
-            last_tts_time = current_time
-            tts_engine.say(label_text)
-            tts_engine.runAndWait()
+        
     else:
         st.info("No signs detected.")
